@@ -8,17 +8,18 @@ Trade Guard is a Python program that monitors real-time price updates for a give
 2. Install the required dependencies using pip:
 
     ```
+    git clone https://github.com/AnamolZ/CryptoGuard.git
     pip install ccxt requests win10toast
     ```
 
 ## Usage
 
 1. Open the command prompt or terminal.
-2. Navigate to the directory where the `trade_alert.py` file is located.
+2. Navigate to the directory where the `CryptoGuard.py` file is located.
 3. Run the program by executing the following command:
 
     ```
-    python trade_alert.py
+    python CryptoGuard.py
     ```
 4. The program will prompt you to enter the name of the exchange, trading pair symbol, buy price threshold, and sell price threshold.
 5. Once you have entered the required information, the program will start monitoring price updates for the specified trading pair on the specified exchange.
