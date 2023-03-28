@@ -6,6 +6,7 @@ Trade Alert is a Python program that monitors real-time price updates for a give
 
 1. Clone the repository or download the source code.
 2. Install the required dependencies using pip:
+
     ```
     pip install ccxt requests win10toast
     ```
@@ -15,6 +16,7 @@ Trade Alert is a Python program that monitors real-time price updates for a give
 1. Open the command prompt or terminal.
 2. Navigate to the directory where the `trade_alert.py` file is located.
 3. Run the program by executing the following command:
+
     ```
     python trade_alert.py
     ```
