@@ -5,10 +5,12 @@ Trade Guard is a Python program that monitors real-time price updates for a give
 ## Installation
 
 1. Clone the repository or download the source code.
+    ```
+    git clone https://github.com/AnamolZ/CryptoGuard.git
+    ```
 2. Install the required dependencies using pip:
 
     ```
-    git clone https://github.com/AnamolZ/CryptoGuard.git
     pip install ccxt requests win10toast
     ```
 
