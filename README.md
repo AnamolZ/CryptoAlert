@@ -1,6 +1,6 @@
-# Trade Alert
+# Trade Guard
 
-Trade Alert is a Python program that monitors real-time price updates for a given trading pair on a specified exchange and triggers notifications when the price reaches a certain threshold. This program uses the ccxt library to fetch ticker data from supported exchanges and the win10toast library to display desktop notifications.
+Trade Guard is a Python program that monitors real-time price updates for a given trading pair on a specified exchange and triggers notifications when the price reaches a certain threshold. This program uses the ccxt library to fetch ticker data from supported exchanges and the win10toast library to display desktop notifications.
 
 ## Installation
 
