@@ -2,6 +2,7 @@ import ccxt
 import requests
 import time
 from win10toast import ToastNotifier
+import pushbullet
 
 
 def get_price_update(exchange, symbol, buy_price, sell_price):
@@ -16,7 +17,7 @@ def get_price_update(exchange, symbol, buy_price, sell_price):
     Returns:
         None
     """
-
+    pb = pushbullet.Pushbullet("o.0UwuY1DN0u42AmPmb0copTHVoxCwO02v")
     exchange_obj = getattr(ccxt, exchange)()
     prev_price = None
 
@@ -32,10 +33,12 @@ def get_price_update(exchange, symbol, buy_price, sell_price):
             if price == buy_price:
                 toaster = ToastNotifier()
                 toaster.show_toast(f"{exchange.capitalize()}", "Buy Point Alert!", duration=10)
+                pb.push_note("Buy Point Alert!", "Price is at $18.70!")
 
             if price == sell_price:
                 toaster = ToastNotifier()
                 toaster.show_toast(f"{exchange.capitalize()}", "Sell Point Alert!", duration=10)
+                pb.push_note("Sell Point Alert!", "Price is at $21.02!")
 
             time.sleep(1)
 
@@ -47,8 +50,8 @@ def get_price_update(exchange, symbol, buy_price, sell_price):
 def main():
     exchanges = ['binance']  # Add more exchanges here if needed
     symbols = ['SOL/USDT']  # Add more trading pairs here if needed
-    buy_price = 18.70
-    sell_price = 21.02
+    buy_price = 18.01
+    sell_price = 21.07
 
     for exchange in exchanges:
         for symbol in symbols:
