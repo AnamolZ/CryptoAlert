@@ -1,31 +1,8 @@
 # Crypto Guard
 
-Crypto Guard is a Python program that monitors real-time price updates for a given trading pair on a specified exchange and triggers notifications when the price reaches a certain threshold. This program uses the ccxt library to fetch ticker data from supported exchanges, win10toast library to display desktop notifications, pushbullet library to display phone notifications, twilio library for the call.
+**Crypto Guard** is a Python-based cryptocurrency price tracking and alerting solution designed to monitor real-time price fluctuations for selected trading pairs across multiple exchanges using the `ccxt` library. The application provides automated notifications when prices reach user-defined buy or sell thresholds, delivering alerts through desktop notifications, mobile push notifications via Pushbullet, and voice call alerts via Twilio.
 
-## Installation
-
-1. Clone the repository or download the source code.
-    ```
-    git clone https://github.com/AnamolZ/CryptoGuard.git
-    ```
-2. Install the required dependencies using pip:
-
-    ```
-    pip install ccxt requests win10toast twilio pushbullet
-    ```
-
-## Usage
-
-1. Open the command prompt or terminal.
-2. Navigate to the directory where the `CryptoGuard.py` file is located.
-3. Run the program by executing the following command:
-
-    ```
-    python CryptoGuard.py
-    ```
-4. The program will prompt you to enter the name of the exchange, trading pair symbol, buy price threshold, and sell price threshold.
-5. Once you have entered the required information, the program will start monitoring price updates for the specified trading pair on the specified exchange.
-6. When the price reaches the buy or sell threshold, a desktop and phone notification will be displayed also you will be getting a call from your twilio account.
+Tailored for cryptocurrency traders and investors, Crypto Guard enables efficient market monitoring without constant manual oversight. With its customizable price thresholds and multi-channel notification system, Crypto Guard ensures timely and informed decision-making, enhancing trading strategies. 
 
 ## Contributing
 

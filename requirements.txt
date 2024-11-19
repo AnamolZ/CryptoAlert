@@ -1,0 +1,5 @@
+ccxt
+requests
+win10toast
+pushbullet.py
+twilio

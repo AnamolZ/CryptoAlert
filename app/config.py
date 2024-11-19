@@ -1,0 +1,4 @@
+EXCHANGES = ['binance']
+SYMBOLS = ['SOL/USDT']
+BUY_PRICE = 18.01
+SELL_PRICE = 21.07
